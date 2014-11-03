@@ -1,0 +1,23 @@
+{
+  "name": "Light Snippet Manager",
+  "version": "0.0.1",
+  "authors": [
+    "Alexandr Parkhomenko"
+  ],
+  "description": "The Extension that help you manage your snippets.",
+  "main": "main.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap" : "*",
+    "ace": "git@github.com:ajaxorg/ace-builds.git",
+    "pouchdb-bower": "*"
+  }
+}

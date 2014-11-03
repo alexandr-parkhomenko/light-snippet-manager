@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Light Snippet Manager",
+  "description": "The Extension that help you manage your snippets.",
+  "version": "0.0.1",
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ]
+}
