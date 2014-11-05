@@ -30,15 +30,15 @@ module.exports = (grunt) ->
     stylus:
       dist:
         expand: true,
-        cwd: 'style/',
-        src: '**/*.styl',
+        cwd: './',
+        src: '*.styl',
         dest: '<%= path %>',
         ext: '.css'
 
     watch:
       scripts:
-        files: ['**/*.coffee', '**/*.styl']
-        tasks: ['coffee', 'stylus']
+        files: ['**/*.coffee', '*.styl', '*.html' ]
+        tasks: ['clean', 'stylus', 'coffee', 'copy']
 
   grunt.registerTask 'default', ['build', 'watch']
   grunt.registerTask 'build', ['clean', 'stylus', 'coffee', 'copy']
